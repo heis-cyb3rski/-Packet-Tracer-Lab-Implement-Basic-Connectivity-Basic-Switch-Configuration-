@@ -41,15 +41,15 @@ configure terminal
 2. Configure VLAN 1 interface for management
 3. Verify IP configuration
 
-PC Configuration
+###PC Configuration
 
-Configure PC1 IP settings:
+1.Configure PC1 IP settings:
 
 IP Address: 192.168.1.1
 
 Subnet Mask: 255.255.255.0
 
-Configure PC2 IP settings:
+2.Configure PC2 IP settings:
 
 IP Address: 192.168.1.2
 
