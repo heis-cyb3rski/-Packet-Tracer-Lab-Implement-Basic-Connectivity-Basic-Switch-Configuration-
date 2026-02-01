@@ -1,6 +1,3 @@
-# -Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-
-This lab focuses on basic Layer 2 switch configuration and network connectivity using Cisco Packet Tracer. The goal is to configure switch management interfaces (SVIs), assign IP addresses to end devices, and verify connectivity using common IOS show and ping commands.
-
 # 🧪 Packet Tracer Lab: Implement Basic Connectivity (Basic Switch Configuration)
 
 ## 📌 Lab Overview
@@ -35,49 +32,17 @@ Click each device and perform the following:
 1. Enter privileged EXEC and global configuration mode:
 enable
 configure terminal
-Set hostname:
+2. hostname S1
+3. Configure VLAN 1 interface for management
+4. Verify IP configuration
 
-hostname S1
-Configure VLAN 1 interface for management:
+### S2 Configuration
+1. Enter global configuration mode and set hostname
+2. Configure VLAN 1 interface for management
+3. Verify IP configuration
 
-
-interface vlan 1
- ip address 192.168.1.253 255.255.255.0
- no shutdown
-end
-copy running-config startup-config
-Verify IP configuration:
-
-
-show ip interface brief
-Expected output:
-
-
-Vlan1  192.168.1.253  YES manual  up  up
-S2 Configuration
-Enter global configuration mode and set hostname:
-
-
-enable
-configure terminal
-hostname S2
-Configure VLAN 1 interface for management:
-
-
-interface vlan 1
- ip address 192.168.1.254 255.255.255.0
- no shutdown
-end
-copy running-config startup-config
-Verify IP configuration:
-
-
-show ip interface brief
-Expected output:
-
-
-Vlan1  192.168.1.254  YES manual  up  up
 PC Configuration
+
 Configure PC1 IP settings:
 
 IP Address: 192.168.1.1
@@ -91,37 +56,33 @@ IP Address: 192.168.1.2
 Subnet Mask: 255.255.255.0
 (Configured via Desktop → IP Configuration in Packet Tracer)
 
-Connectivity Verification
 From PC1 Command Prompt:
-
 
 ping 192.168.1.253
 ping 192.168.1.254
 ping 192.168.1.2
-From PC2 Command Prompt:
 
+From PC2 Command Prompt:
 
 ping 192.168.1.254
 ping 192.168.1.253
 ping 192.168.1.1
-✅ All pings should be successful (initial 80% success may occur due to ARP resolution).
 
 From S1:
 
-
 ping 192.168.1.1
 ping 192.168.1.2
 ping 192.168.1.254
-From S2:
 
+From S2:
 
 ping 192.168.1.1
 ping 192.168.1.2
 ping 192.168.1.253
-Expected result:
 
-Success rate is 100 percent (5/5)
+
 ✅ Key Concepts Practiced
+
 Switch hostname configuration
 
 Switch Virtual Interface (SVI)
@@ -135,11 +96,13 @@ Connectivity verification using ping
 IOS verification commands (show ip interface brief)
 
 📚 Tools Used
+
 Cisco Packet Tracer
 
 Cisco IOS CLI
 
 🧠 Lessons Learned
+
 A switch does not need an IP address to forward traffic, but it does need one for management
 
 SVIs provide Layer 3 access to Layer 2 switches
