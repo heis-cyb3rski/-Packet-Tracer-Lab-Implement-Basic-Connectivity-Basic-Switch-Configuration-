@@ -41,7 +41,7 @@ configure terminal
 2. Configure VLAN 1 interface for management
 3. Verify IP configuration
 
-###PC Configuration
+### PC Configuration
 
 1.Configure PC1 IP settings:
 
