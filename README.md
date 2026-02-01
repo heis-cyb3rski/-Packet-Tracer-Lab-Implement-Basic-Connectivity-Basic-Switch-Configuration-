@@ -33,18 +33,14 @@ Click each device and perform the following:
 
 ### S1 Configuration
 1. Enter privileged EXEC and global configuration mode:
-```bash
 enable
 configure terminal
 Set hostname:
 
-bash
-Copy code
 hostname S1
 Configure VLAN 1 interface for management:
 
-bash
-Copy code
+
 interface vlan 1
  ip address 192.168.1.253 255.255.255.0
  no shutdown
@@ -52,26 +48,22 @@ end
 copy running-config startup-config
 Verify IP configuration:
 
-bash
-Copy code
+
 show ip interface brief
 Expected output:
 
-nginx
-Copy code
+
 Vlan1  192.168.1.253  YES manual  up  up
 S2 Configuration
 Enter global configuration mode and set hostname:
 
-bash
-Copy code
+
 enable
 configure terminal
 hostname S2
 Configure VLAN 1 interface for management:
 
-bash
-Copy code
+
 interface vlan 1
  ip address 192.168.1.254 255.255.255.0
  no shutdown
@@ -79,13 +71,11 @@ end
 copy running-config startup-config
 Verify IP configuration:
 
-bash
-Copy code
+
 show ip interface brief
 Expected output:
 
-nginx
-Copy code
+
 Vlan1  192.168.1.254  YES manual  up  up
 PC Configuration
 Configure PC1 IP settings:
@@ -104,15 +94,13 @@ Subnet Mask: 255.255.255.0
 Connectivity Verification
 From PC1 Command Prompt:
 
-bash
-Copy code
+
 ping 192.168.1.253
 ping 192.168.1.254
 ping 192.168.1.2
 From PC2 Command Prompt:
 
-bash
-Copy code
+
 ping 192.168.1.254
 ping 192.168.1.253
 ping 192.168.1.1
@@ -120,22 +108,18 @@ ping 192.168.1.1
 
 From S1:
 
-bash
-Copy code
+
 ping 192.168.1.1
 ping 192.168.1.2
 ping 192.168.1.254
 From S2:
 
-bash
-Copy code
+
 ping 192.168.1.1
 ping 192.168.1.2
 ping 192.168.1.253
 Expected result:
 
-csharp
-Copy code
 Success rate is 100 percent (5/5)
 ✅ Key Concepts Practiced
 Switch hostname configuration
