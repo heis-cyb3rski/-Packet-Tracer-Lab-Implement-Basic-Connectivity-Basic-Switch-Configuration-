@@ -28,6 +28,8 @@ This lab focuses on **basic Layer 2 switch configuration and network connectivit
 
 Click each device and perform the following:
 
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20123941.png)
+
 ### S1 Configuration
 1. Enter privileged EXEC and global configuration mode:
 enable
@@ -36,10 +38,19 @@ configure terminal
 3. Configure VLAN 1 interface for management
 4. Verify IP configuration
 
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20123516.png)
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20123713.png)
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20124154.png)
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20124154.png)
+
+
 ### S2 Configuration
 1. Enter global configuration mode and set hostname
 2. Configure VLAN 1 interface for management
 3. Verify IP configuration
+
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20124907.png)
+
 
 ### PC Configuration
 
@@ -49,12 +60,16 @@ IP Address: 192.168.1.1
 
 Subnet Mask: 255.255.255.0
 
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20125328.png)
+
 2.Configure PC2 IP settings:
 
 IP Address: 192.168.1.2
 
 Subnet Mask: 255.255.255.0
 (Configured via Desktop → IP Configuration in Packet Tracer)
+
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20125336.png)
 
 From PC1 Command Prompt:
 
@@ -68,11 +83,15 @@ ping 192.168.1.254
 ping 192.168.1.253
 ping 192.168.1.1
 
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20130122.png)
+
 From S1:
 
 ping 192.168.1.1
 ping 192.168.1.2
 ping 192.168.1.254
+
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20130354.png)
 
 From S2:
 
@@ -80,6 +99,7 @@ ping 192.168.1.1
 ping 192.168.1.2
 ping 192.168.1.253
 
+![image](https://github.com/heis-cyb3rski/-Packet-Tracer-Lab-Implement-Basic-Connectivity-Basic-Switch-Configuration-/blob/d1cea22ada8e9b2c2fe39e56bd08261476ee1821/Screenshot%202026-02-01%20130505.png)
 
 ✅ Key Concepts Practiced
 
